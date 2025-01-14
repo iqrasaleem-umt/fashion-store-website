@@ -9,9 +9,10 @@ export default function Hero() {
     </div>
 <div className="flex justify-evenly text-gray-600 font-mono">
   <Link href="/" className="hover:underline hover:text-pink-900">Home</Link>
-  <Link href="" className="hover:underline hover:text-pink-900">Shalwar kameez (female)</Link>
-  <Link href="" className="hover:underline hover:text-pink-900">Shalwar kameez duppata (female)</Link>
-  <Link href="" className="hover:underline hover:text-pink-900">Shalwar kameez (male)</Link>
+  <Link href="/products" className="hover:underline hover:text-pink-900">All</Link>
+  
+  <Link href="category/female" className="hover:underline hover:text-pink-900">Female</Link>
+  <Link href="/category/male" className="hover:underline hover:text-pink-900">Male</Link>
   <Link href="" className="hover:underline hover:text-pink-900">Contact</Link>
 </div>
 
