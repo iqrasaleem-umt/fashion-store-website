@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function ProductCard(props: { title: string; price: string; image: string;category: string }) {
+export default function productCard(props: { title: string; price: string; image: string;category: string }) {
   return (
     <div className="p-4">
       <div className="relative w-[300px] h-[400px] overflow-hidden">
