@@ -8,6 +8,7 @@ export default function Page() {
     <div>
       <Hero/>
       <ProductList/>
+     
     </div>
   )
 }

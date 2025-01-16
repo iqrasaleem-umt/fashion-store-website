@@ -13,7 +13,7 @@ export default function Hero() {
   
   <Link href="/category/female" className="hover:underline hover:text-pink-900">Female</Link>
   <Link href="/category/male" className="hover:underline hover:text-pink-900">Male</Link>
-  <Link href="" className="hover:underline hover:text-pink-900">Contact</Link>
+  <Link href="/contact" className="hover:underline hover:text-pink-900">Contact</Link>
 </div>
 
 <div className='border mt-3'></div>
