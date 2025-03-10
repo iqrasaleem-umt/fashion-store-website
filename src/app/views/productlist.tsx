@@ -8,7 +8,7 @@ export default function ProductList() {
       <h1 className="text-4xl font-semibold px-16">Collection</h1>
       <div className="grid grid-cols-4 gap-3 mt-5">
         {productchunks.map((item)=>(
-          <ProductCard key={item.id} title={item.title}category={item.category} price={item.price}  image={item.image} />
+          <ProductCard key={item.id} title={item.title}category={item.category} price={item.price}  image={item.image}  id={item.id} />
           
         ))}
         

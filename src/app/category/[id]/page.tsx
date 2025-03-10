@@ -10,13 +10,13 @@ export default async function Page({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params; // Destructure 'slug' from 'params'
-  const result = getProductByCategory(slug); // Use the resolved 'slug'
+   const { slug } = await params; // Destructure 'slug' from 'params'
+   const result = getProductByCategory(slug); // Use the resolved 'slug'
 
   return (
     <div className="px-6 mt-10">
       <h1 className="text-4xl font-semibold px-16">Collection</h1>
-      <div className="grid grid-cols-4 gap-3 mt-5">
+       <div className="grid grid-cols-4 gap-3 mt-5">
         {result.map((item) => (
           <ProductCard
             key={item.id}
@@ -24,9 +24,11 @@ export default async function Page({
             category={item.category}
             price={item.price}
             image={item.image}
+            id={item.id}
+            
           />
         ))}
-      </div>
+      </div> 
     </div>
   );
 }
