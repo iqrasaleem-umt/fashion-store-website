@@ -8,10 +8,9 @@ export default function productCard(props: { title: string; price: string; image
       <div className="relative w-[300px] h-[400px] overflow-hidden">
         <Image
           src={props.image}
-          layout="fill"
-          objectFit="cover"
+         fill className="object-cover transition-transform duration-200 ease-in-out transform hover:scale-110"
           alt="image"
-          className="transition-transform duration-200 ease-in-out transform hover:scale-110"
+          
         />
       </div>
       <p className="text-sm font-mono">{props.title}</p>
