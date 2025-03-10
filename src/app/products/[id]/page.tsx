@@ -1,10 +1,18 @@
 
 
 
-export default function Page({ params }: { params: { id: string } }) {
-  return (
-    <div className="px-6 mt-10 text-2xl font-semibold">
-      This is a product page of product {params.id}
-    </div>
-  );
+
+import { NextPage } from "next";
+
+interface ProductPageProps {
+  params: {
+    id: string;
+  };
 }
+
+const ProductPage: NextPage<ProductPageProps> = ({ params }) => {
+  return <div>Product ID: {params.id}</div>;
+};
+
+export default ProductPage;
+
